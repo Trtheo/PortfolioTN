@@ -43,4 +43,8 @@
 
 
 
-  document.getElementById('year').innerHTML = new Date().getFullYear();
+  // Set current year in footer
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.innerHTML = new Date().getFullYear();
+  }
